@@ -20,10 +20,11 @@ body,
   height: 100vh;
   margin: 0;
   padding: 0;
+  font-family: InterVariable, sans-serif;
 }
 
 html.dark {
-  background: #222;
+  background: #040404;
   color: white;
 }
 </style>

@@ -4,7 +4,6 @@ import {
   presetAttributify,
   presetIcons,
   presetTypography,
-  presetUno,
   presetWebFonts,
   transformerDirectives,
   transformerVariantGroup,
@@ -16,7 +15,7 @@ export default defineConfig({
     ['icon-btn', 'inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-teal-600'],
   ],
   presets: [
-    presetUno(),
+
     presetAttributify(),
     presetIcons({
       scale: 1.2,
@@ -24,9 +23,9 @@ export default defineConfig({
     presetTypography(),
     presetWebFonts({
       fonts: {
-        sans: 'DM Sans',
-        serif: 'DM Serif Display',
-        mono: 'DM Mono',
+        sans: 'InterVariable',
+        serif: 'Inter Display',
+        mono: 'Inter',
       },
       processors: createLocalFontProcessor(),
     }),

@@ -4,11 +4,13 @@ import { appDescription } from './app/constants/index'
 export default defineNuxtConfig({
   modules: [
     '@vueuse/nuxt',
-    '@unocss/nuxt',
     '@pinia/nuxt',
+    '@unocss/nuxt',
     '@nuxtjs/color-mode',
     '@vite-pwa/nuxt',
     '@nuxt/eslint',
+    '@nuxtjs/tailwindcss',
+    '@nuxt/fonts',
   ],
   ssr: true,
   devtools: {
@@ -28,14 +30,12 @@ export default defineNuxtConfig({
         { name: 'description', content: appDescription },
         { name: 'apple-mobile-web-app-status-bar-style', content: 'black-translucent' },
         { name: 'theme-color', media: '(prefers-color-scheme: light)', content: 'white' },
-        { name: 'theme-color', media: '(prefers-color-scheme: dark)', content: '#222222' },
+        { name: 'theme-color', media: '(prefers-color-scheme: dark)', content: '#040404' },
       ],
     },
   },
 
-  css: [
-    '@unocss/reset/tailwind.css',
-  ],
+  css: ['~/assets/css/main.css'],
 
   colorMode: {
     classSuffix: '',

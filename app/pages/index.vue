@@ -27,6 +27,5 @@ const online = useOnline()
         </div>
       </template>
     </ClientOnly>
-    <InputEntry />
   </div>
 </template>
